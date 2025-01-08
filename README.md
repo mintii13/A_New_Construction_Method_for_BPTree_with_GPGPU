@@ -86,7 +86,6 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
   ```
   cupy
   numpy
-  numba
   ```
 
 ## Dataset Access
