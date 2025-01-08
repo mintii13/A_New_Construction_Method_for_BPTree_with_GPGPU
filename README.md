@@ -48,9 +48,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 - Fully utilizes GPU capabilities
 - Optimal for large-scale datasets
 - Features four distinct CUDA kernels:
-  - Reshape 1D to 2D arrays
   - Parallel 3D tree construction
-  - Leaf node copying
   - 3D to 2D array conversion
 
 ![Alt text](Images/InsertingProccessingDiagram.png)
