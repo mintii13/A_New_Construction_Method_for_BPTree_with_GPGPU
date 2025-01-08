@@ -51,9 +51,8 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
   - Leaf node copying
   - 3D to 2D array conversion
 
-![Alt text](Images/InsertingProcessingDiagram.png)
+![Alt text](Images/InsertingProccessingDiagram.png)
 *Figure 3: Leaf-based Parallel Insertion*
-` /./7
 ## Experimental Results
 
 ### Test Environment
