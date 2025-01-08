@@ -143,19 +143,6 @@ Department of Computing Fundamental, FPT University, Ho Chi Minh, Vietnam
 
 \* Corresponding author
 
-## Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@article{b_plus_tree_gpgpu,
-  title={A New Construction Method for B+-tree Data Structure with GPGPU},
-  author={Tri, Nguyen Minh and Quan, Khuu Trong and Ngu, Huynh Cong Viet},
-  journal={[Journal Details]},
-  year={2024}
-}
-```
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
