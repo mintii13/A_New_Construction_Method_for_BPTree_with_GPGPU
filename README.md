@@ -132,9 +132,6 @@ python src/TopDownCPU.py
 ## Future Work
 
 - Improve handling of imperfect datasets
-- Optimize memory management further
-- Extend support for dynamic updates
-- Investigate hybrid CPU-GPU approaches
 
 ## Authors
 
