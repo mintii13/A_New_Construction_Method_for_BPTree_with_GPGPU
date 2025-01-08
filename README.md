@@ -140,6 +140,7 @@ python src/TopDownCPU.py
 - Huynh Cong Viet Ngu* (nguhcv@fe.edu.vn)
 
 Department of Computing Fundamental, FPT University, Ho Chi Minh, Vietnam
+
 \* Corresponding author
 
 ## Citation
