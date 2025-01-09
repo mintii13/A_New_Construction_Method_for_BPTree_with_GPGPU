@@ -15,10 +15,9 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
    - Sort by CuPy sort (from Cupy library)
    - Insertion into the 3D Tree Array (Proposed Construction method)
    - Conversion from 3D Array to 2D Representation (Our Method's optimization)
-3. **Memory Efficiency**
-   - Designed hybrid data structure for optimal memory usage
-   - Implemented efficient conversion between 3D and 2D array representations
-   - Optimized memory access patterns for GPU architecture
+3. **Core of our Method**
+   - Using Arrays instead Linked list
+   - Proposing new formula to find the index of a child node
 
 ## Implementation Methods
 
