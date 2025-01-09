@@ -27,7 +27,6 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 - Suitable for small datasets
 
 ![Alt text](Images/Linear-basedB+-treeInsertion.png)
-
 *Figure 1: CPU top-down Insertion*
 
 ### 2. CPU Bottom-up Approach ([BottomUpCPU.py](Source/BottomUpCPU.py))
@@ -65,12 +64,16 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
    - CPU bottom-up: ~7.13 seconds for 50MB
    - GPU method: <1 second consistently
 
+![Alt text](Images/10_50FlowChart.png)
+
 2. **Large Datasets (100-2000MB)**
    - Significant performance gap widens with dataset size
    - CPU top-down: 1715.89 seconds for 1000MB
    - CPU bottom-up: 436.83 seconds for 1000MB
    - GPU method: 9.62 seconds for 1000MB
    - 178x speedup achieved for 1GB datasets
+   
+![Alt text](Images/100_2000FlowChart.png)
 
 3. **Scalability**
    - GPU method shows linear scaling with dataset size
