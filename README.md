@@ -58,7 +58,9 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ### Performance Analysis
 1. **Datasets**
+
 ![Alt text](Images/TableKeysOrders.png)
+
 2. **Small Datasets (10-50MB)**
    - GPU method maintains sub-second processing times
    - CPU top-down: ~55.05 seconds for 50MB
