@@ -22,7 +22,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ## Implementation Methods
 
-### 1. CPU Top-down Approach (Source/TopDownCPU.py)
+### 1. CPU Top-down Approach (![Alt text](Source/TopDownCPU.py))
 - Traditional sequential insertion
 - Traverses from root to leaf for each key
 - Suitable for small datasets
