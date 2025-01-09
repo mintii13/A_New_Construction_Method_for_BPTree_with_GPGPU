@@ -8,16 +8,13 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ## Main Contributions
 
-1. **Novel GPU-based Insertion Method**
-   - Developed a new parallel insertion algorithm specifically optimized for GPU architecture
-   - Implemented hybrid representation that optimizes both performance and memory usage
-   - Achieved complete parallelization of the insertion process
-
-2. **Performance Optimization**
-   - Eliminated synchronization overhead from level-based methods
-   - Reduced insertion complexity to O(1) for GPU-based insertion
-   - Enhanced throughput construction through conflict-free computation
-
+1. **Novel GPU-based Construction Method**
+   - Developed a new parallel insertion algorithm specifically optimized for GPU architecture.
+   - Achieve 247x time speedup to CPU top-down for 1000MB dataset and 90x time speedup to CPU bottom-up with data 2000MB.
+2. **Three steps for Proposed Solution**
+   - Sort by CuPy sort (from Cupy library)
+   - Insertion into the 3D Tree Array (Proposed Construction method)
+   - Conversion from 3D Array to 2D Representation (Our Method's optimization)
 3. **Memory Efficiency**
    - Designed hybrid data structure for optimal memory usage
    - Implemented efficient conversion between 3D and 2D array representations
@@ -25,7 +22,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ## Implementation Methods
 
-### 1. CPU Top-down Approach (TopDownCPU.py)
+### 1. CPU Top-down Approach (Source/TopDownCPU.py)
 - Traditional sequential insertion
 - Traverses from root to leaf for each key
 - Suitable for small datasets
@@ -34,7 +31,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 *Figure 1: CPU top-down Insertion*
 
-### 2. CPU Bottom-up Approach (BottomUpCPU.py)
+### 2. CPU Bottom-up Approach (Source/BottomUpCPU.py)
 - Builds tree from leaf level upward
 - Improved efficiency over top-down approach
 - Better performance for medium-sized datasets
@@ -43,7 +40,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 *Figure 2: CPU bottom-up Insertion*
 
-### 3. GPU-based Approach (LeafBasedGPU.py)
+### 3. GPU-based Approach (Source/LeafBasedGPU.py)
 - Novel parallel construction method
 - Fully utilizes GPU capabilities
 - Optimal for large-scale datasets
