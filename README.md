@@ -57,8 +57,9 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 - CUDA Compiler: NVIDIA CUDA Compiler
 
 ### Performance Analysis
+1. **Datasets**
 
-1. **Small Datasets (10-50MB)**
+2. **Small Datasets (10-50MB)**
    - GPU method maintains sub-second processing times
    - CPU top-down: ~55.05 seconds for 50MB
    - CPU bottom-up: ~7.13 seconds for 50MB
@@ -66,7 +67,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ![Alt text](Images/10_50FlowChart.png)
 
-2. **Large Datasets (100-2000MB)**
+3. **Large Datasets (100-2000MB)**
    - Significant performance gap widens with dataset size
    - CPU top-down: 1715.89 seconds for 1000MB
    - CPU bottom-up: 436.83 seconds for 1000MB
@@ -75,7 +76,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
    
 ![Alt text](Images/100_2000FlowChart.png)
 
-3. **Scalability**
+4. **Scalability**
    - GPU method shows linear scaling with dataset size
    - Maintains efficient performance even at 2000MB
    - CPU methods show exponential time increase
