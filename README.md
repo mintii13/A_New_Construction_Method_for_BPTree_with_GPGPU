@@ -153,7 +153,7 @@ cd b-plus-tree-gpgpu
 pip install -r requirements.txt
 ```
 
-4. Run experiments (edit the path_file):
+4. Run experiments (edit the file_path and corresponding key):
 ```bash
 # For GPU implementation
 python src/LeafBasedGPU.py
