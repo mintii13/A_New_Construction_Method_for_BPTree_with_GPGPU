@@ -40,8 +40,8 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 
 ### 3. Previous GPU-based approach ([PreviousGPU.py](Source/PreviousGPU.py))
-- Builds tree bottom up from leaf level.
-- Parallel at each level but sequential in total as shown as the curved arrows.
+- Builds tree bottom up from leaf level, level by level as shown as the curved arrows.
+- Parallel at each level but sequential in total.
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
 ### 4. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
