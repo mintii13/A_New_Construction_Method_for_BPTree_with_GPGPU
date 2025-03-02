@@ -18,22 +18,22 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 3. **Core techniques of our Method**
    - Using Arrays instead Linked list.
    - Proposing new formula to calculate index position for every key in the B+-tree simutaneously using GPGPU's kernel.
-   - Converting 3D representaion into 2D in parallel using GPU's kernel
+   - Converting 3D representaion into 2D in parallel using GPU's kernel.
 
 ## Implementation Methods
 
 ### 1. CPU Top-down Approach ([TopDownCPU.py](Source/TopDownCPU.py))
-- Traditional sequential insertion
-- Traverses from root to leaf for each key
-- Suitable for small datasets
+- Traditional sequential insertion.
+- Traverses from root to leaf for each key.
+- Suitable for small datasets.
 
 ![Alt text](Images/Linear-basedB+-treeInsertion.png)
 *Figure 1: CPU top-down Insertion*
 
 ### 2. CPU Bottom-up Approach ([BottomUpCPU.py](Source/BottomUpCPU.py))
-- Builds tree from leaf level upward
-- Improved efficiency over top-down approach
-- Better performance for medium-sized datasets
+- Builds tree from leaf level upward, sequentially as visualized as each dashed arrows.
+- Improved efficiency over top-down approach.
+- Better performance for medium-sized datasets.
 
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
@@ -41,7 +41,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ### 3. Previous GPU-based approach ([PreviousGPU.py](Source/PreviousGPU.py))
 - Builds tree bottom up from leaf level.
-- Parallel at each level but sequential in total.
+- Parallel at each level but sequential in total as shown as the curved arrows
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
 ### 4. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
