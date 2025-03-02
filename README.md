@@ -143,7 +143,7 @@ Test datasets are available at: [Google Drive](https://drive.google.com/drive/fo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/b-plus-tree-gpgpu.git
+git clone https://github.com/mintii13/A_New_Construction_Method_for_BPTree_with_GPGPU.git
 cd b-plus-tree-gpgpu
 ```
 2. Download the dataset
