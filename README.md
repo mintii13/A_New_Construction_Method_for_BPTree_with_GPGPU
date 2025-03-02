@@ -155,6 +155,7 @@ pip install -r requirements.txt
 ```bash
 # For GPU implementation
 python src/LeafBasedGPU.py
+python src/PreviousGPU.py
 
 # For CPU implementations
 python src/BottomUpCPU.py
