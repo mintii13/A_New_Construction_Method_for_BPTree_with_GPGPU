@@ -4,7 +4,7 @@ This repository contains the implementation and experimental results of our rese
 
 ## Introduction
 
-The B+-tree data structure plays a crucial role in data storage and retrieval. However, traditional methods of constructing B+-trees face significant challenges when handling large datasets due to their high time complexity. Our research proposes a novel method to accelerate B+-tree construction on large datasets using GPGPU. The method fully parallelizes the insertion operation, surpassing CPU-based methods in both efficiency and scalability.
+The B+-tree data structure plays a crucial role in data storage and retrieval. However, traditional methods of constructing B+-trees face significant challenges when handling large datasets due to their high time complexity. Additionally, previous GPU methods could not fully improve tree construction performance with massive datasets. Therefore, our research proposes a novel method to accelerate B+-tree construction on large datasets using GPGPU. The method fully parallelizes the insertion operation, surpassing CPU-based methods and the previous GPU-based method in both efficiency and scalability.
 
 ## Main Contributions
 
@@ -38,7 +38,12 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 *Figure 2: CPU bottom-up Insertion*
 
-### 3. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
+### 3. Previous GPU-based approach ()
+- Builds tree bottom up from leaf level.
+- Parallel at each level but sequential in total.
+![Alt text](Images/Level-basedInsertionVisualization.png)
+
+### 4. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
 - Novel parallel construction method
 - Fully utilizes GPU capabilities
 - Optimal for large-scale datasets
