@@ -57,8 +57,8 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 ## Experimental Results
 
 ### Test Environment
-- CPU: Intel i5-8365U (4 cores)
-- GPU: NVIDIA Tesla T4 (2560 CUDA cores)
+- CPU: AMD Ryzen 7 7435HS (16 cores, 3.1GHz)
+- GPU: NVIDIA GeForce RTX 4060 GPU (3072 CUDA cores, 8GB VRam GDDR6)
 - CUDA Compiler: NVIDIA CUDA Compiler
 
 ### Performance Analysis
@@ -69,18 +69,19 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 2. **Small Datasets (10-50MB)**
    - GPU method maintains sub-second processing times
-   - CPU top-down: ~55.05 seconds for 50MB
-   - CPU bottom-up: ~7.13 seconds for 50MB
-   - GPU method: <1 second consistently
+   - CPU top-down: ~24.67 seconds for 50MB
+   - CPU bottom-up: ~4.58 seconds for 50MB
+   - Previous GPU method: >1 second for 50MB
+   - Proposed GPU method: <1 second consistently
 
 ![Alt text](Images/10_50FlowChart.png)
 
 3. **Large Datasets (100-2000MB)**
    - Significant performance gap widens with dataset size
-   - CPU top-down: 1715.89 seconds for 1000MB
-   - CPU bottom-up: 436.83 seconds for 1000MB
-   - GPU method: 9.62 seconds for 1000MB
-   - 178x speedup achieved for 1GB datasets
+   - CPU top-down: 9403.71 seconds for 2000MB
+   - CPU bottom-up: 649.96 seconds for 2000MB
+   - Previous GPU method: 32.83 seconds for 2000MB
+   - Proposed GPU method: 18.02 seconds for 2000MB
    
 ![Alt text](Images/100_2000FlowChart.png)
 
