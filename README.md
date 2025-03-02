@@ -28,7 +28,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 - Suitable for small datasets.
 
 ![Alt text](Images/Linear-basedB+-treeInsertion.png)
-*Figure 1: CPU top-down Insertion*
+
 
 ### 2. CPU Bottom-up Approach ([BottomUpCPU.py](Source/BottomUpCPU.py))
 - Builds tree from leaf level upward, sequentially as visualized as each dashed arrows.
@@ -37,7 +37,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
-*Figure 2: CPU bottom-up Insertion*
+
 
 ### 3. Previous GPU-based approach ([PreviousGPU.py](Source/PreviousGPU.py))
 - Builds tree bottom up from leaf level.
@@ -54,7 +54,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ![Alt text](Images/InsertingProccessingDiagram.png)
 
-*Figure 3: Leaf-based Parallel Insertion*
+
 ## Experimental Results
 
 ### Test Environment
@@ -163,9 +163,6 @@ python src/BottomUpCPU.py
 python src/TopDownCPU.py
 ```
 
-## Future Work
-
-- Improve handling of imperfect datasets
 
 ## Authors
 
