@@ -84,12 +84,35 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
    - Maintains efficient performance even at 2000MB
    - CPU methods show exponential time increase
 
+## Ablation Study
+This section presents a comprehensive evaluation of the
+proposed solution across different GPU architectures including
+NVIDIA GeForce RTX 3060 GPU (3840 CUDA cores, 6GB
+VRam GDDR6), NVIDIA GeForce RTX 4050 GPU (2560
+CUDA cores, 6GB VRam GDDR6) and NVIDIA GeForce
+RTX 4060 GPU (3072 CUDA cores, 8GB VRam GDDR6).
+
+![Alt text](Images/10_50CompareGPU.pngt.png)
+![Alt text](Images/100_2000CompareGPU.png.pngt.png)
+
+## Appendix
+### Detaild Results
+COMPLETE EXPERIMENTAL DATA TABLE FROM 10MB TO 50MB.
+LIGHT YELLOW: THE AVERAGE VALUE OF SIX RUNS.
+LIGHT GREEN: THE TOTAL TIME OF THE FIVE GPU’S FACTOR.
+LIGHT ORANGE: THE STANDARD DEVIATION OF THE AVERAGE VALUE
+![Alt text](Images/Appendix1.jpg.png)
+
+COMPLETE EXPERIMENTAL DATA TABLE FROM 100MB TO 2000MB.
+LIGHT YELLOW: THE AVERAGE VALUE OF SIX RUNS.
+LIGHT GREEN: THE TOTAL TIME OF THE FIVE GPU’S FACTOR.
+LIGHT ORANGE: THE STANDARD DEVIATION OF THE AVERAGE VALUE
+![Alt text](Images/Appendix2.jpg.png)
 ## Requirements
 
 ### Hardware
 - CUDA-capable GPU
-- Minimum 8GB RAM
-- Multi-core CPU
+- Minimum 6GB RAM
 
 ### Software
 - CUDA Toolkit
@@ -138,7 +161,7 @@ python src/TopDownCPU.py
 
 ## Authors
 
-- Nguyen Minh Tri (chinjsu130205@gmail.com)
+- Nguyen Minh Tri (minhtringuyen130205@gmail.com)
 - Khuu Trong Quan (khuutrongquan220405@gmail.com)
 - Huynh Cong Viet Ngu* (nguhcv@fe.edu.vn)
 
