@@ -44,7 +44,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 - Parallel at each level but sequential in total.
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
-### 4. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
+### 4. GPU-based Approach ([ProposedGPU.py](Source/LeafBasedGPU.py))
 - Novel parallel construction method.
 - Fully utilizes GPU capabilities.
 - Optimal for large-scale datasets.
