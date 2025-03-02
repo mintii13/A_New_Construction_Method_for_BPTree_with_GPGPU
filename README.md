@@ -10,7 +10,7 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 1. **Novel GPU-based Construction Method**
    - Developed a new parallel insertion algorithm specifically optimized for GPU architecture.
-   - Achieve 247x time speedup to CPU top-down for 1000MB dataset and 90x time speedup to CPU bottom-up with data 2000MB.
+   - Achieve 521.9x, 36.1x, 1.8x time respectively speedup to CPU top-down for 2000MB dataset.
 2. **Three steps for Proposed Solution**
    - Sort by CuPy sort (from Cupy library)
    - Insertion into the 3D Tree Array (Proposed Construction method)
