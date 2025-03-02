@@ -12,12 +12,13 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
    - Developed a new parallel insertion algorithm specifically optimized for GPU architecture.
    - Achieve 521.9x, 36.1x, 1.8x time respectively speedup to CPU top-down for 2000MB dataset.
 2. **Three steps for Proposed Solution**
-   - Sort by CuPy sort (from Cupy library)
-   - Insertion into the 3D Tree Array (Proposed Construction method)
-   - Conversion from 3D Array to 2D Representation (Our Method's optimization)
+   - Sort by CuPy sort (from Cupy library).
+   - Insertion into the 3D Tree Array (Proposed Construction method).
+   - Conversion from 3D Array to 2D Representation (Our Method's optimization).
 3. **Core techniques of our Method**
-   - Using Arrays instead Linked list
-   - Proposing new formula to find the index of a child node
+   - Using Arrays instead Linked list.
+   - Proposing new formula to calculate index position for every key in the B+-tree simutaneously using GPGPU's kernel.
+   - Converting 3D representaion into 2D in parallel using GPU's kernel
 
 ## Implementation Methods
 
