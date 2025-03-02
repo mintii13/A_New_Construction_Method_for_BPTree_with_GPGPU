@@ -41,16 +41,16 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 
 ### 3. Previous GPU-based approach ([PreviousGPU.py](Source/PreviousGPU.py))
 - Builds tree bottom up from leaf level.
-- Parallel at each level but sequential in total as shown as the curved arrows
+- Parallel at each level but sequential in total as shown as the curved arrows.
 ![Alt text](Images/Level-basedInsertionVisualization.png)
 
 ### 4. GPU-based Approach ([LeafBasedGPU.py](Source/LeafBasedGPU.py))
-- Novel parallel construction method
-- Fully utilizes GPU capabilities
-- Optimal for large-scale datasets
+- Novel parallel construction method.
+- Fully utilizes GPU capabilities.
+- Optimal for large-scale datasets.
 - Features two distinct CUDA kernels:
-  - Parallel 3D tree construction
-  - 3D to 2D array conversion
+  - Parallel 3D tree construction.
+  - 3D to 2D array conversion.
 
 ![Alt text](Images/InsertingProccessingDiagram.png)
 
@@ -58,9 +58,9 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 ## Experimental Results
 
 ### Test Environment
-- CPU: AMD Ryzen 7 7435HS (16 cores, 3.1GHz)
-- GPU: NVIDIA GeForce RTX 4060 GPU (3072 CUDA cores, 8GB VRam GDDR6)
-- CUDA Compiler: NVIDIA CUDA Compiler
+- CPU: AMD Ryzen 7 7435HS (16 cores, 3.1GHz).
+- GPU: NVIDIA GeForce RTX 4060 GPU (3072 CUDA cores, 8GB VRam GDDR6).
+- CUDA Compiler: NVIDIA CUDA Compiler.
 
 ### Performance Analysis
 1. **Datasets**
@@ -69,27 +69,27 @@ The B+-tree data structure plays a crucial role in data storage and retrieval. H
 ![Alt text](Images/TableKeysOrders.png)
 
 2. **Small Datasets (10-50MB)**
-   - GPU method maintains sub-second processing times
-   - CPU top-down: ~24.67 seconds for 50MB
-   - CPU bottom-up: ~4.58 seconds for 50MB
-   - Previous GPU method: >1 second for 50MB
-   - Proposed GPU method: <1 second consistently
+   - GPU method maintains sub-second processing times.
+   - CPU top-down: ~24.67 seconds for 50MB.
+   - CPU bottom-up: ~4.58 seconds for 50MB.
+   - Previous GPU method: >1 second for 50MB.
+   - Proposed GPU method: <1 second consistently.
 
 ![Alt text](Images/10_50FlowChart.png)
 
 3. **Large Datasets (100-2000MB)**
-   - Significant performance gap widens with dataset size
-   - CPU top-down: 9403.71 seconds for 2000MB
-   - CPU bottom-up: 649.96 seconds for 2000MB
-   - Previous GPU method: 32.83 seconds for 2000MB
-   - Proposed GPU method: 18.02 seconds for 2000MB
+   - Significant performance gap widens with dataset size.
+   - CPU top-down: 9403.71 seconds for 2000MB.
+   - CPU bottom-up: 649.96 seconds for 2000MB.
+   - Previous GPU method: 32.83 seconds for 2000MB.
+   - Proposed GPU method: 18.02 seconds for 2000MB.
    
 ![Alt text](Images/100_2000FlowChart.png)
 
 4. **Scalability**
-   - GPU method shows linear scaling with dataset size
-   - Maintains efficient performance even at 2000MB
-   - CPU methods show exponential time increase
+   - GPU method shows linear scaling with dataset size.
+   - Maintains efficient performance even at 2000MB.
+   - CPU methods show exponential time increase.
 
 ## Ablation Study
 This section presents a comprehensive evaluation of the
@@ -113,7 +113,7 @@ LIGHT ORANGE: THE STANDARD DEVIATION OF THE AVERAGE VALUE<br>
 COMPLETE EXPERIMENTAL DATA TABLE FROM 100MB TO 2000MB.<br>
 LIGHT YELLOW: THE AVERAGE VALUE OF SIX RUNS.<br>
 LIGHT GREEN: THE TOTAL TIME OF THE FIVE GPU’S FACTOR.<br>
-LIGHT ORANGE: THE STANDARD DEVIATION OF THE AVERAGE VALUE<br>
+LIGHT ORANGE: THE STANDARD DEVIATION OF THE AVERAGE VALUE.<br>
 ![Alt text](Images/Appendix2.jpg)
 ## Requirements
 
