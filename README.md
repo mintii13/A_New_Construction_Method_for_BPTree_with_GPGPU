@@ -92,8 +92,8 @@ VRam GDDR6), NVIDIA GeForce RTX 4050 GPU (2560
 CUDA cores, 6GB VRam GDDR6) and NVIDIA GeForce
 RTX 4060 GPU (3072 CUDA cores, 8GB VRam GDDR6).
 
-![Alt text](Images/10_50CompareGPU.pngt.png)
-![Alt text](Images/100_2000CompareGPU.png.pngt.png)
+![Alt text](Images/10_50CompareGPU.png)
+![Alt text](Images/100_2000CompareGPU.png)
 
 ## Appendix
 ### Detaild Results
