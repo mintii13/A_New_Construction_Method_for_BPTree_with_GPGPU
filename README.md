@@ -146,13 +146,14 @@ Test datasets are available at: [Google Drive](https://drive.google.com/drive/fo
 git clone https://github.com/username/b-plus-tree-gpgpu.git
 cd b-plus-tree-gpgpu
 ```
+2. Download the dataset
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run experiments:
+4. Run experiments (edit the path_file):
 ```bash
 # For GPU implementation
 python src/LeafBasedGPU.py
