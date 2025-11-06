@@ -173,6 +173,20 @@ python src/TopDownCPU.py
 
 Department of Computing Fundamental, FPT University, Ho Chi Minh, Vietnam
 
+## Ciatation
+```bash
+@INPROCEEDINGS{11211452,
+  author={Minh Tri, Nguyen and Trong Quan, Khuu and Cong Viet Ngu, Huynh},
+  booktitle={2025 10th International Conference on Big Data Analytics (ICBDA)}, 
+  title={A New Construction Method for B+-Tree Structure with GPGPU}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Source coding;Scalability;Memory management;Graphics processing units;Big Data;Data structures;Central Processing Unit;Time complexity;Optimization;Faces;GPGPU;B+-tree;B+-tree construction;data structure;big data analysis},
+  doi={10.1109/ICBDA65366.2025.11211452}}
+```
+
 \* Corresponding author
 
 ## License
