@@ -172,7 +172,7 @@ python src/TopDownCPU.py
 - Huynh Cong Viet Ngu* (nguhcv@fe.edu.vn)
 
 Department of Computing Fundamental, FPT University, Ho Chi Minh, Vietnam
-
+\* Corresponding author
 ## Ciatation
 ```bash
 @INPROCEEDINGS{11211452,
@@ -186,8 +186,6 @@ Department of Computing Fundamental, FPT University, Ho Chi Minh, Vietnam
   keywords={Source coding;Scalability;Memory management;Graphics processing units;Big Data;Data structures;Central Processing Unit;Time complexity;Optimization;Faces;GPGPU;B+-tree;B+-tree construction;data structure;big data analysis},
   doi={10.1109/ICBDA65366.2025.11211452}}
 ```
-
-\* Corresponding author
 
 ## License
 
